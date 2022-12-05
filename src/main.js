@@ -5,7 +5,8 @@ import App from './App.vue';
 //引入rem
 import 'amfe-flexible';
 //引入vant
-import { Button, Icon, Search,  Card, Tab, Tabs, Stepper, NavBar, Toast} from 'vant';
+import { Button, Icon, Search,  Card, Tab, Tabs, Stepper, NavBar, Toast, 
+ActionBar, ActionBarIcon, ActionBarButton, } from 'vant';
 
 import router from './router/indexRouter.js';
 import './common/css/base.less';
@@ -17,6 +18,7 @@ app.use(router);
 
 app.use(Button).use(Icon).use(Search).use(Card).use(Tab).use(Tabs).use(Stepper).use(NavBar);
 app.use(Toast);
+app.use(ActionBar).use(ActionBarIcon).use(ActionBarButton);
 
 app.mount('#app');
 
